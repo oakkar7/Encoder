@@ -99,6 +99,11 @@ public:
 		//update_finishup();  // to force linker to include the code (does not work)
 	}
 
+public:
+	void EncoderReset() {
+	encoder.position = 0;	
+	
+	}
 
 #ifdef ENCODER_USE_INTERRUPTS
 	inline int32_t read() {
